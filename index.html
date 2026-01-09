@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Atelier de couture — Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root{--accent:#d96b6b;--dark:#222;--muted:#666}
+        *{box-sizing:border-box}
+        body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:var(--dark);line-height:1.5}
+        header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #f0f0f0;flex-wrap:wrap;gap:12px}
+        .logo{font-family:Playfair Display,serif;font-size:1.25rem;color:var(--accent)}
+        nav{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+        nav a{color:var(--dark);text-decoration:none;font-weight:600;white-space:nowrap;font-size:0.95rem}
+        .hero{min-height:66vh;display:grid;place-items:center;text-align:center;padding:48px 20px;background:linear-gradient(180deg, rgba(217,107,107,0.06), rgba(255,255,255,0.0)), url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat}
+        .hero h1{font-family:Playfair Display,serif;font-size:2.4rem;margin:0 0 8px;color:#111}
+        .hero p{color:var(--muted);max-width:720px;margin:0 auto 18px}
+        .btn{display:inline-block;padding:10px 18px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+        .container{max-width:1100px;margin:0 auto;padding:48px 20px}
+        .grid{display:grid;gap:20px}
+        .about{grid-template-columns:1fr;align-items:center}
+        .about img{width:100%;border-radius:10px;display:block}
+        .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+        .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+        .card h3{margin:0 0 8px;font-family:Playfair Display,serif}
+        .portfolio{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+        .portfolio img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+        .contact{display:grid;grid-template-columns:1fr;gap:16px}
+        form input, form textarea{width:100%;padding:10px;border:1px solid #e6e6e6;border-radius:8px}
+        form button{padding:10px 16px;background:var(--accent);color:#fff;border:0;border-radius:8px;font-weight:600}
+        footer{padding:24px;text-align:center;color:var(--muted);font-size:0.95rem}
+        @media(min-width:800px){.about{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr 320px}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Atelier de couture</div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div>
+            <h1>Créations & retouches sur-mesure</h1>
+            <p>Bienvenue à l'atelier Olaitan couture — pièces uniques, retouches précises et conseils personnalisés pour toutes vos envies couture.</p>
+            <a class="btn" href="#portfolio">Voir le portfolio</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="apropos" class="grid about" style="margin-bottom:40px">
+            <div>
+                <img src="télécharger (3).jpeg" alt="Atelier de couture image">
+            </div>
+            <div>
+                <h2 style="font-family:Playfair Display,serif;margin-top:0">À propos</h2>
+                <p>Je suis une lycéenne en classe de terminal spécialisée en couture et passionnée, spécialisée dans la confection de robes, la retouche et la transformation de vêtements. Chaque création est pensée pour sublimer la personnalité et s'adapter parfaitement.</p>
+                <p style="color:var(--muted)">Sur rendez-vous — ateliers d'initiation disponibles.</p>
+            </div>
+        </section>
+
+        <section id="services" style="margin-bottom:40px">
+            <h2 style="font-family:Playfair Display,serif">Services</h2>
+            <div class="grid cards" style="margin-top:18px">
+                <div class="card">
+                    <h3>Retouches & ajustements</h3>
+                    <p>Ourlets, reprises, ajustements pour un tombé impeccable.</p>
+                </div>
+                <div class="card">
+                    <h3>Pièces sur-mesure</h3>
+                    <p>Conception de robes, jupes et vestes selon vos mesures et votre style.</p>
+                </div>
+                <div class="card">
+                    <h3>Conseils & ateliers</h3>
+                    <p>Apprenez les bases ou approfondissez vos techniques en petit groupe.</p>
+                </div>
+                <div class="card">
+                    <h3>Accessoires</h3>
+                    <p>Sacs, pochettes et accessoires textiles faits main.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" style="margin-bottom:40px">
+            <h2 style="font-family:Playfair Display,serif">Portfolio</h2>
+            <div class="grid portfolio" style="margin-top:18px">
+                <img src="Sous Robe Nidah - 62 _ Fuchsia.jpeg" alt="Robe sur mesure">
+                <img src="1 paire de ciseaux de tailleur professionnels, ciseaux de couture de 22,9 cm + cisailles à fil gratuites – Ciseaux robustes plus solides que les (1).jpeg" alt="Détails couture">
+                <img src="Amazon Sign-In.jpeg" alt="Accessoire textile">
+                <img src="télécharger.jpeg" alt="Vêtement ajusté">
+            </div>
+        </section>
+
+        <section id="contact" style="margin-bottom:40px">
+            <h2 style="font-family:Playfair Display,serif">Contact</h2>
+            <div class="grid contact" style="margin-top:18px">
+                <div>
+                    <form action="contact.php" method="post">
+                        <label>Nom</label>
+                        <input type="text" name="nom" required>
+                        <label style="margin-top:8px">Email</label>
+                        <input type="email" name="email" required>
+                        <label style="margin-top:8px">Message</label>
+                        <textarea name="message" rows="5" required></textarea>
+                        <div style="margin-top:12px">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div style="padding:18px;border-radius:10px;background:#fafafa;align-self:start">
+                    <p><strong>Atelier de couture</strong></p>
+                    <p>Téléphone : <a href="tel:+229 0146639178">+229 0146639178</a></p>
+                    <p>Email : <a href="mailto:olaitanhounkpatin48@gmail.com">olaitanhounkpatin48@gmail.com</a></p>
+                    <p style="color:var(--muted)">Horaires sur rendez-vous</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <small>© <span id="year"></span> Atelier
